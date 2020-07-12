@@ -15,6 +15,7 @@ body {
 a {
     color: #444;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -33,7 +34,32 @@ ul {
 .main-nav {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 100px;
+    justify-content: space-between;
     padding: 20px;
     font-size: 13;
 }
+
+.main-nav .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.main-nav ul {
+    display: flex;
+    font-size: 17px;
+}
+
+.main-nav ul li {
+    padding: 0 17px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
